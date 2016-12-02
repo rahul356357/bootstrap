@@ -1,0 +1,69 @@
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+#carousel1 {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+}
+
+#mycarousel {
+    position: relative;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 70%;
+    margin: auto;
+}
+
+#videobar {
+    margin-top: 10px;
+}
+
+#feature {
+    height: 60px;
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.tabpanel {
+    height: auto;
+    width: 100%;
+}
+
+#container12 {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto width: 960px;
+}
+
+#footer {
+    width: 100%;
+    background-color: #2e3339;
+    color: grey;
+}
+
+b {
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+#footer li {
+    margin-left: 0px;
+}

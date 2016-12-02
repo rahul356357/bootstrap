@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Job Search" />
+    <meta name="keywords" content="HTML,CSS,bootstrap" />
+    <meta name="author" content="Rahul Bora" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/text.css">
+    <link rel="stylaesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+</head>
+<body>
+    <header>
+        <div class="row">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                        <a class="navbar-brand" href="#">Brand</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">JOBS <span class="sr-only">(current)</span></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RECRUITERS <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Browse All </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Exclusive Recruiters</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Bulk Recruiters</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COMPANIES <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">IT</a></li>
+                                    <li><a href="#">Manufacturing</a></li>
+                                    <li><a href="#">Production Line</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">HR</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES<span class="caret"></span></a>
+                                <ul class="dropdown-menu text-left">
+                                    <li><a href="#">Resume Building</a></li>
+                                    <li><a href="#">e-Learning</a></li>
+                                    <li><a href="#">Personality Development</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Certiification</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Priority Applicants</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search job,skills,ex...">
+                            </div>
+                            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span>SEARCH</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#myModal" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span>SIGNIN</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-map-marker"></span>LOCATION </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+        <!--end of row-->
+    </header>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                    <h4 class="modal-title" id="myModalLabel">SignIn</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-google" aria-hidden="true"></i>Google </button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</button>
+                    <button type="button" class="btn btn-primary">LOGIN</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="carousel1">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/about.png" alt="about image" class="img-responsive">
+                    <div class="carousel-caption">
+                        <h3>
+                                      Headline</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                    </div>
+                </div>
+                <!-- End Item -->
+                <div class="item">
+                    <img src="img/about.png" alt="about image" class="img-responsive">
+                    <div class="carousel-caption">
+                        <h3>
+                                      Headline</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                    </div>
+                </div>
+                <!-- End Item -->
+                <div class="item">
+                    <img src="img/portfolio.png" alt="portfolio image" class="img-responsive">
+                    <div class="carousel-caption">
+                        <h3>
+                                      Headline</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                    </div>
+                </div>
+                <!-- End Item -->
+                <div class="item">
+                    <img src="img/services.png" alt="services image" class="img-responsive">
+                    <div class="carousel-caption">
+                        <h3>
+                                      Headline</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr,<em></em> sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                    </div>
+                </div>
+                <!-- End Item -->
+            </div>
+            <!-- End Carousel Inner -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- End Carousel -->
+    </div>
+    <!--end of row-->
+
+
+    <div class="row" id="feature">
+        <div class="col-lg-12 col-md-4 col-sm-2">
+            <div class=" text-center">
+                <h1>Now Hiring <small>top hiring</small></h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="container12">
+        <div class="row">
+            <div class=" col-lg-12 col-md-4 col-sm-4">
+                <div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">All Sections</a></li>
+                        <li role="presentation"><a href="#IT" aria-controls="profile" role="tab" data-toggle="tab">Information Technology</a></li>
+                        <li role="presentation"><a href="#manf" aria-controls="messages" role="tab" data-toggle="tab">Manufacturing</a></li>
+                        <li role="presentation"><a href="#services" aria-controls="settings" role="tab" data-toggle="tab">Services</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <div class=" col-md-3 col-sm-4">
+                                <ul> <b>ChipDsg/Semicond.</b>
+                                    <li> Calsoft Labs, An Alten Company</li>
+                                    <li> e-Infochips</li>
+                                    <li> Intel</li>
+                                    <li> MAXIM Integrated</li>
+                                    <li> QLOGIC</li>
+                                    <li> SYNAPSE DESIGN</li>
+                                    <li> XILINX</li>
+                                </ul>
+                                <ul>
+                                    <b>
+                        Managed Network Services</b>
+                                    <li>Redcentric Solutions</li>
+                                    <li>Virtela Technology</li>
+                                    <li>Services Inc.</li>
+                                    <li>Gaming</li>
+                                    <li>Aristocrat Technologies</li>
+                                    <li>UBISOFT</li>
+                                    <li>Software Services</li>
+                                    <li>Iron Systems India Pvt Ltd</li>
+                                    <li>Accenture</li>
+                                    <li>Allstate Solutions</li>
+                                    <li>Altran Technologies India Pvt Ltd.</li>
+                                    <li>Aspire Systems</li>
+                                    <li>BMC Software India Pvt. Ltd.</li>
+                                    <li>rillio Technologies</li>
+                                    <li> Bureau Veritas (GSSC)</li>
+                                    <li>Capgemini</li>
+                                    <li> CGI</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4  col-md-3 ">
+                                <ul> <b>ChipDsg/Semicond.</b>
+                                    <li> Calsoft Labs, An Alten Company</li>
+                                    <li> e-Infochips</li>
+                                    <li> Intel</li>
+                                    <li> MAXIM Integrated</li>
+                                    <li> QLOGIC</li>
+                                    <li> SYNAPSE DESIGN</li>
+                                    <li> XILINX</li>
+                                </ul>
+                                <ul>
+                                    <b>
+                                      Managed Network Services</b>
+                                    <li>Redcentric Solutions</li>
+                                    <li>Virtela Technology</li>
+                                    <li>Services Inc.</li>
+                                    <li>Gaming</li>
+                                    <li>Aristocrat Technologies</li>
+                                    <li>UBISOFT</li>
+                                    <li>Software Services</li>
+                                    <li>Iron Systems India Pvt Ltd</li>
+                                    <li>Accenture</li>
+                                    <li>Allstate Solutions</li>
+                                    <li>Altran Technologies India Pvt Ltd.</li>
+                                    <li>Aspire Systems</li>
+                                    <li>BMC Software India Pvt. Ltd.</li>
+                                    <li>rillio Technologies</li>
+                                    <li> Bureau Veritas (GSSC)</li>
+                                    <li>Capgemini</li>
+                                    <li> CGI</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4 col-md-3 ">
+                                <ul> <b>ChipDsg/Semicond.</b>
+                                    <li> Calsoft Labs, An Alten Company</li>
+                                    <li> e-Infochips</li>
+                                    <li> Intel</li>
+                                    <li> MAXIM Integrated</li>
+                                    <li> QLOGIC</li>
+                                    <li> SYNAPSE DESIGN</li>
+                                    <li> XILINX</li>
+                                </ul>
+                                <ul>
+                                    <b>
+                                      Managed Network Services</b>
+                                    <li>Redcentric Solutions</li>
+                                    <li>Virtela Technology</li>
+                                    <li>Services Inc.</li>
+                                    <li>Gaming</li>
+                                    <li>Aristocrat Technologies</li>
+                                    <li>UBISOFT</li>
+                                    <li>Software Services</li>
+                                    <li>Iron Systems India Pvt Ltd</li>
+                                    <li>Accenture</li>
+                                    <li>Allstate Solutions</li>
+                                    <li>Altran Technologies India Pvt Ltd.</li>
+                                    <li>Aspire Systems</li>
+                                    <li>BMC Software India Pvt. Ltd.</li>
+                                    <li>rillio Technologies</li>
+                                    <li> Bureau Veritas (GSSC)</li>
+                                    <li>Capgemini</li>
+                                    <li> CGI</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--tab pane 1-->
+                        <div role="tabpanel" class="tab-pane" id="IT">
+                            <div class="col-sm-4 col-md-3 ">
+                                <ul> <b>ITES/BPO/.COM </b>
+                                    <li>Ajuba Solutions India Pvt. Ltd.</li>
+                                    <li> Allianz</li>
+                                    <li>Allsec Technologies</li>
+                                    <li>AMNET SYSTEMS</li>
+                                    <li>ATS Services</li>
+                                    <li>CSS CORP PVT LTD</li>
+                                    <li>e4e Healthcare Business Services Pvt. Ltd</li>
+                                    <li> Elico Healthcare Services</li>
+                                    <li>EPISOURCE</li>
+                                    <li>ienergizer</li>
+                                    <li>Ingram Micro (I) Pvt Ltd.</li>
+                                    <li>McKinsey Business</li>
+                                    <li>Presentation Design</li>
+                                    <li>Ocwen Financial</li>
+                                    <li>RR Donnelley</li>
+                                    <li> Scientific Publishing Services</li>
+                                    <li>SourceHOV</li>
+                                    <li>Sutherland Global Services</li>
+                                    <li>Sutherland HealthcarSolutions</li>
+                                    <li>Synchrony Financial</li>
+                                    <li>Tata Business Support Services</li>
+                                    <li>Visionary RCM Infotech (India) Private Limited</li>
+                                    <li>Williams Lea</li>
+                                    <li>WNS?</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul> <b>ITES/BPO/.COM </b>
+                                    <li>Ajuba Solutions India Pvt. Ltd.</li>
+                                    <li> Allianz</li>
+                                    <li>Allsec Technologies</li>
+                                    <li>AMNET SYSTEMS</li>
+                                    <li>ATS Services</li>
+                                    <li>CSS CORP PVT LTD</li>
+                                    <li>e4e Healthcare Business Services Pvt. Ltd</li>
+                                    <li> Elico Healthcare Services</li>
+                                    <li>EPISOURCE</li>
+                                    <li>ienergizer</li>
+                                    <li>Ingram Micro (I) Pvt Ltd.</li>
+                                    <li>McKinsey Business</li>
+                                    <li>Presentation Design</li>
+                                    <li>Ocwen Financial</li>
+                                    <li>RR Donnelley</li>
+                                    <li> Scientific Publishing Services</li>
+                                    <li>SourceHOV</li>
+                                    <li>Sutherland Global Services</li>
+                                    <li>Sutherland HealthcarSolutions</li>
+                                    <li>Synchrony Financial</li>
+                                    <li>Tata Business Support Services</li>
+                                    <li>Visionary RCM Infotech (India) Private Limited</li>
+                                    <li>Williams Lea</li>
+                                    <li>WNS?</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4 col-md-3">
+                                <ul> <b>ITES/BPO/.COM </b>
+                                    <li>Ajuba Solutions India Pvt. Ltd.</li>
+                                    <li> Allianz</li>
+                                    <li>Allsec Technologies</li>
+                                    <li>AMNET SYSTEMS</li>
+                                    <li>ATS Services</li>
+                                    <li>CSS CORP PVT LTD</li>
+                                    <li>e4e Healthcare Business Services Pvt. Ltd</li>
+                                    <li> Elico Healthcare Services</li>
+                                    <li>EPISOURCE</li>
+                                    <li>ienergizer</li>
+                                    <li>Ingram Micro (I) Pvt Ltd.</li>
+                                    <li>McKinsey Business</li>
+                                    <li>Presentation Design</li>
+                                    <li>Ocwen Financial</li>
+                                    <li>RR Donnelley</li>
+                                    <li> Scientific Publishing Services</li>
+                                    <li>SourceHOV</li>
+                                    <li>Sutherland Global Services</li>
+                                    <li>Sutherland HealthcarSolutions</li>
+                                    <li>Synchrony Financial</li>
+                                    <li>Tata Business Support Services</li>
+                                    <li>Visionary RCM Infotech (India) Private Limited</li>
+                                    <li>Williams Lea</li>
+                                    <li>WNS?</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--tab pane 2-->
+                        <div role="tabpanel" class="tab-pane" id="manf">
+                            <div class="col-sm-4 col-md-3">
+                                <ul>
+                                    <b>Apparel</b>
+                                    <li>Shahi Exports Pvt Ltd.</li>
+                                </ul>
+                                <ul>
+                                    <b>Auto/Auto Equip.</b>
+                                    <li>Anand Automotive</li>
+                                    <li> Ashok Leyland</li>
+                                    <li> Atlas Copco</li>
+                                    <li> Daimler India</li>
+                                    <li> Honda Motorcycle and Scooter India Pvt Ltd</li>
+                                    <li> Hyundai Motor India Limited</li>
+                                    <li> JBM Group</li>
+                                    <li>Schaeffler Group</li>
+                                </ul>
+                                <ul><b>CRO</b>
+                                    <li>nVentiv Health Clinical</li>
+                                    <li>PAREXEL</li>
+                                    <li>PPD</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4  col-md-3 ">
+                                <ul>
+                                    <b>Apparel</b>
+                                    <li>Shahi Exports Pvt Ltd.</li>
+                                </ul>
+                                <ul>
+                                    <b>Auto/Auto Equip.</b>
+                                    <li>Anand Automotive</li>
+                                    <li> Ashok Leyland</li>
+                                    <li> Atlas Copco</li>
+                                    <li> Daimler India</li>
+                                    <li> Honda Motorcycle and Scooter India Pvt Ltd</li>
+                                    <li> Hyundai Motor India Limited</li>
+                                    <li> JBM Group</li>
+                                    <li>Schaeffler Group</li>
+                                </ul>
+                                <ul><b>CRO</b>
+                                    <li>nVentiv Health Clinical</li>
+                                    <li>PAREXEL</li>
+                                    <li>PPD</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4 col-md-3 ">
+                                <ul>
+                                    <b>Apparel</b>
+                                    <li>Shahi Exports Pvt Ltd.</li>
+                                </ul>
+                                <ul>
+                                    <b>Auto/Auto Equip.</b>
+                                    <li>Anand Automotive</li>
+                                    <li> Ashok Leyland</li>
+                                    <li> Atlas Copco</li>
+                                    <li> Daimler India</li>
+                                    <li> Honda Motorcycle and Scooter India Pvt Ltd</li>
+                                    <li> Hyundai Motor India Limited</li>
+                                    <li> JBM Group</li>
+                                    <li>Schaeffler Group</li>
+                                </ul>
+                                <ul><b>CRO</b>
+                                    <li>nVentiv Health Clinical</li>
+                                    <li>PAREXEL</li>
+                                    <li>PPD</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--tab pane 3-->
+                        <div role="tabpanel" class="tab-pane" id="services">
+                            <div class="col-sm-4 col-md-3 ">
+                                <ul>
+                                    <b>Finance/Insurance</b>
+                                    <li>Apollo Munich Health Ins. </li>
+                                    <li>Au FINANCIERS (INDIA)</li>
+                                    <li> CME India Technology And Support Services Pvt Ltd</li>
+                                    <li> Future Generali India Life Insurance Co. Ltd.</li>
+                                    <li> Great West Global Business Services India Pvt. Ltd.</li>
+                                    <li> HDB Financial Services Ltd.</li>
+                                    <li>HOME CREDIT INDIA FINANCE PRIVATE LIMITED</li>
+                                    <li> Invesco</li>
+                                    <li> Muthoot Finance</li>
+                                    <li> Pricewaterhouse Coopers</li>
+                                    <li> Private Limited</li>
+                                    <li> Reliance Capital Limited</li>
+                                    <li> SMC Global Securities Ltd</li>
+                                    <li> Tata AIA Life</li>
+                                    <li> Tata Capital</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4 col-md-3 ">
+                                <ul>
+                                    <b>Finance/Insurance</b>
+                                    <li>Apollo Munich Health Ins. </li>
+                                    <li>Au FINANCIERS (INDIA)</li>
+                                    <li> CME India Technology And Support Services Pvt Ltd</li>
+                                    <li> Future Generali India Life Insurance Co. Ltd.</li>
+                                    <li> Great West Global Business Services India Pvt. Ltd.</li>
+                                    <li> HDB Financial Services Ltd.</li>
+                                    <li>HOME CREDIT INDIA FINANCE PRIVATE LIMITED</li>
+                                    <li> Invesco</li>
+                                    <li> Muthoot Finance</li>
+                                    <li> Pricewaterhouse Coopers</li>
+                                    <li> Private Limited</li>
+                                    <li> Reliance Capital Limited</li>
+                                    <li> SMC Global Securities Ltd</li>
+                                    <li> Tata AIA Life</li>
+                                    <li> Tata Capital</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4 col-md-3 ">
+                                <ul>
+                                    <b>Finance/Insurance</b>
+                                    <li>Apollo Munich Health Ins. </li>
+                                    <li>Au FINANCIERS (INDIA)</li>
+                                    <li> CME India Technology And Support Services Pvt Ltd</li>
+                                    <li> Future Generali India Life Insurance Co. Ltd.</li>
+                                    <li> Great West Global Business Services India Pvt. Ltd.</li>
+                                    <li> HDB Financial Services Ltd.</li>
+                                    <li>HOME CREDIT INDIA FINANCE PRIVATE LIMITED</li>
+                                    <li> Invesco</li>
+                                    <li> Muthoot Finance</li>
+                                    <li> Pricewaterhouse Coopers</li>
+                                    <li> Private Limited</li>
+                                    <li> Reliance Capital Limited</li>
+                                    <li> SMC Global Securities Ltd</li>
+                                    <li> Tata AIA Life</li>
+                                    <li> Tata Capital</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <!--tab pane 4-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of row-->
+    </div>
+    <!--end of row-->
+    <div class="container">
+        <div class="col-sm-3 col-md-3 ">
+            <div id="searchbar">
+                <div class="list-group">
+                    <h3><span class="label label-default">Cities</span></h3>
+                    <button type="button" class="list-group-item">Bangalore</button>
+                    <button type="button" class="list-group-item">Hyderabad</button>
+                    <button type="button" class="list-group-item">Chennai</button>
+                    <button type="button" class="list-group-item">Gurugram</button>
+                    <button type="button" class="list-group-item">Pune</button>
+                    <button type="button" class="list-group-item">Kolkata</button>
+                    <button type="button" class="list-group-item">Chandigarh</button>
+                    <button type="button" class="list-group-item">Delhi</button>
+                    <button type="button" class="list-group-item">Mumbai</button>
+                </div>
+            </div>
+        </div>
+        <!--end of column-->
+        <div class="col-sm-2 col-md-6">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#location" aria-controls="home" role="tab" data-toggle="tab">Location</a></li>
+                <li role="presentation"><a href="#aboutc" aria-controls="profile" role="tab" data-toggle="tab">About Company</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="location">
+                    <div class="map-responsive">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62231.90635426478!2d77.56944106812307!3d12.875915529787097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1swipro!5e0!3m2!1sen!2sin!4v1480322746629" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- end of tab1  -->
+            </div>
+        </div>
+    </div>
+    <!--end of grid_9-->
+    </div>
+    <!--end of container grid-->
+    <footer>
+        <div class="row">
+            <div class="container " id="footer">
+                <div class="col-md-3  col-sm-4">
+                    <ul>
+                        <b>Information</b>
+                        <li> About Us</li>
+                        <li> Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Careers with Us</li>
+                        <li>Sitemap</li>
+                        <li> Contact Us</li>
+                        <li>FAQs</li>
+                        <li>Summons / Notices</li>
+                        <li> Grievances</li>
+                        <li> Fraud Alert</li>
+                    </ul>
+                </div>
+                <!--end of first column-->
+                <div class="col-md-3  col-sm-4 ">
+                    <ul><b>Jobseekers</b>
+                        <li>Register Now</li>
+                        <li>Search Jobs</li>
+                        <li>Search Jobs</li>
+                        <li>Login</li>
+                        <li>Create Job Alert</li>
+                        <li>Report aProblem</li>
+                        <li>Blogs</li>
+                        <li>Security Advice</li>
+                        <li>Mobile Site</li>
+                    </ul>
+                </div>
+                <!--end of second column-->
+                <div class="col-md-3  col-sm-4 ">
+                    <ul><b>Fast Forward</b>
+                        <li>Resume Writing</li>
+                        <li>Profile Enhancement</li>
+                        <li>Recruiter Reach</li>
+                        <li>Jobs For You</li>
+                    </ul>
+                </div>
+                <!--end of third column-->
+                <div class="col-md-3  col-sm-4 ">
+                    <ul><b>Browse Jobs</b>
+                        <li> Browse All Jobs</li>
+                        <li> Premium Engineering Jobs</li>
+                        <li> Premium MBA Jobs</li>
+                        <li> Govt. Jobs</li>
+                        <li>International Jobs</li>
+                        <li>Jobs by Company</li>
+                        <li>Jobs by Category</li>
+                        <li>Jobs by Designation</li>
+                        <li>Jobs by Location</li>
+                        <li>Jobs by Skill</li>
+                    </ul>
+                </div>
+                <!--end of fourth column-->
+                <div class="col-md-3  col-sm-4 ">
+                    <ul>
+                        <b>Jobhub</b>
+                        <li>Venues</li>
+                    </ul>
+                </div>
+                <!--end of fifth column-->
+                <div class="col-md-2 ">
+                    <ul>
+                        <b>Exclusives</b>
+                        <li>BookASmile</li>
+                        <li> Corporate Vouchers</li>
+                        <li>Gift Cards</li>
+                        <li>ReferMyFriend</li>
+                        <li>Reserve Your Seat</li>
+                        <li>My Coupons</li>
+                        <li>Find MyWallet Recharge</li>
+                    </ul>
+                </div>
+                <!--end of sixth  column-->
+                <div class="divider">
+                </div>
+                <div class="row">
+                    <div class="">
+                        <div class="text-center">
+                        </div>
+                        <p class="text-center"> Copyright 2016 © Bigtree Entertainment Pvt. Ltd. All Rights Reserved.<br>
+                            <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i> <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i> <i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i> <i class="fa fa-google-square fa-2x"
+                                aria-hidden="true">
+                    </p>
+                </div>
+             <!--end of column1-->
+           </div>
+         </div>  <!--end of container-->
+       </div><!--end of row-->
+      </footer><!--end of  footer-->
+  </body>
+  </html>
