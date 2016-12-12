@@ -48,22 +48,34 @@ ul {
 }
 
 #container12 {
+  top-margin:5px;
     height: auto;
     margin-left: auto;
-    margin-right: auto width: 960px;
+    margin-right: auto;
 }
 
 #footer {
+  top-margin:5px;
+
     width: 100%;
+    height: auto;
     background-color: #2e3339;
     color: grey;
 }
 
-b {
+#footer b {
+  color: white;
     font-size: 12px;
     font-weight: bolder;
 }
 
 #footer li {
     margin-left: 0px;
+}
+.fl {
+    float: left;
+}
+
+.bms {
+    width: 145px;
 }
